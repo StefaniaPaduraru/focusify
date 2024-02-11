@@ -1,0 +1,26 @@
+.navbar {
+    width: 300px;
+    padding: 10px;
+    background-color: burlywood;
+    top:0;
+    position:sticky;
+    height: 100vh;
+  }
+  
+  @media (max-width: 868px) {
+    .navbar {
+      width: max-content;
+    }
+  }
+  
+  .nav-item{
+    margin-top:4vh;
+  }
+  .d-flex{
+    margin-top:40px;
+  }
+  .offcanvas{
+    padding: 10px;
+    background-color:burlywood;
+    max-width: 50%;
+  }

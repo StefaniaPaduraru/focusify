@@ -1,21 +1,14 @@
-.navbar{
-  width:300px;
-  padding: 10px;
-  background-color:burlywood;
-  height: 100vh;
-}
-.nav-item{
-  margin-top:4vh;
-}
-.d-flex{
-  margin-top:40px;
-}
-.offcanvas{
-  padding: 10px;
-  background-color:burlywood;
-}
 body {
   font-family: 'Poiret One', sans-serif;
   font-weight: bold;
   font-size: x-large;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  overflow-x: hidden;
 }
+.app {
+  display: flex;
+  flex-direction: row;
+}
+

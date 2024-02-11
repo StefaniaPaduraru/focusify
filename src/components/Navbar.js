@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from "react";
 import MenuContent from "./MenuContent";
+import './Navbar.css';
 
 function NavBar() {
-  const [showMenu, setShowMenu] = useState(true);
+  const [isLargeScreen, setIsLargeScreen] = useState(window.innerWidth > 868);
 
   useEffect(() => {
     const handleResize = () => {
-      setShowMenu(window.innerWidth > 868);
+      setIsLargeScreen(window.innerWidth > 868);
     };
 
     window.addEventListener("resize", handleResize);
@@ -16,10 +17,6 @@ function NavBar() {
     };
   }, []);
 
-  const toggleMenu = () => {
-    setShowMenu((prevState) => !prevState);
-  };
-
   return (
     <>
       <div className="offcanvas offcanvas-start" id="demo">
@@ -27,20 +24,19 @@ function NavBar() {
       </div>
 
       <nav className="navbar flex-column justify-content-start align-items-start">
-        {window.innerWidth <= 868 ? (
+        {isLargeScreen ? (
+          <React.Fragment>
+            <MenuContent/>
+          </React.Fragment>
+        ) : (
           <button
             className="navbar-toggler"
             type="button"
-            onClick={toggleMenu}
             data-bs-toggle="offcanvas"
             data-bs-target="#demo"
           >
             <span className="navbar-toggler-icon"></span>
           </button>
-        ) : (
-          <React.Fragment>
-            <MenuContent/>
-          </React.Fragment>
         )}
       </nav>
     </>
