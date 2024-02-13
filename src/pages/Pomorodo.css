@@ -25,3 +25,17 @@
   top: 10px;
   right: 10px;
 }
+
+.react-bootstrap .progress-bar {
+  width: 100%;
+}
+.div-progress-bar{
+  margin-bottom:2vw;
+}
+#button-add{
+  background-color:cadetblue;
+   color:white;
+}
+#button-add:hover{
+  background-color:rgb(73, 121, 122);
+}

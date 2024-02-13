@@ -39,7 +39,7 @@ function CalendarActivities() {
     <div className="container container-calendar">
       <Calendar onChange={setDate} value={date} />
       <br />
-      <button className="btn btn-secondary" onClick={openModal}>
+      <button id="button-add" className="btn btn-lg rounded-5" onClick={openModal}>
         Add Event
       </button>
       <Modal
@@ -99,7 +99,7 @@ function CalendarActivities() {
           </Form>
         </Modal.Body>
       </Modal>
-      <div className=" container-fluid event-display">
+      <div className="container-fluid event-display">
         {data
           .filter(
             (event) =>
@@ -108,7 +108,7 @@ function CalendarActivities() {
           )
           .map((event) => (
             /// The mapping function passes through each event remaining after filtering and returns a new DIV for each event
-            <div key={event.id}>
+            <div key={event.id} className="container div-calendar">
               <h3>{event.title}</h3>
               <p>{event.description}</p>
               <button

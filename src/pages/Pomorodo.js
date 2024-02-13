@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import "./Pomorodo.css";
 import { FaInfo } from "react-icons/fa";
 import * as bootstrap from "bootstrap";
+import ProgressBar from "@ramonak/react-progress-bar";
 
 function Pomorodo() {
   const [timer, setTimer] = useState(50 * 60); // 50 minutes
@@ -9,6 +10,7 @@ function Pomorodo() {
   const [sessions, setSessions] = useState([]);
   const [currentSession, setCurrentSession] = useState(1);
   const popoverListRef = useRef([]);
+  const percentage = (timer / (50 * 60)) * 100;
 
   useEffect(() => {
     let interval = null;
@@ -64,9 +66,12 @@ function Pomorodo() {
     setTimer(50 * 60);
   };
 
+
+
   return (
     <>
       <div className="container container-pomo">
+      
       <button
           type="button"
           className="btn btn-outline-secondary rounded-5"
@@ -78,9 +83,14 @@ function Pomorodo() {
           <FaInfo/>
         </button>
 
-        <button className="btn btn-success" onClick={addSession}>
+        <div className="container-fluid div-progress-bar">
+        <ProgressBar completed={percentage} bgColor="cadetblue" baseBgColor="grey" direction="rtl"
+        height="1.2rem" isLabelVisible={false}/>
+        </div>
+        <button id="button-add" className="btn btn-lg rounded-5" onClick={addSession} >
           Add Session
         </button>
+        
         <br />
         <div className="container-lg shadow mb-4 p-4 border border-dark rounded-3">
           <fieldset id="timer">

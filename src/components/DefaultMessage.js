@@ -15,8 +15,10 @@ function DefaultMessage() {
     <div className="row">
     <div className="container col-7 p-5 my-5 mx-5 bg-light text-black-90 rounded">
     <h1>Focus on your day</h1>
-        <p>Check your tasks in Home page,
-           review your Calendar or study using the Pomorodo method</p>
+        <p>Check your tasks in Home page,<br/>
+           review your Calendar <br/>
+           or study using the Pomorodo method
+        </p>
       </div>
     </div>
     </div>
