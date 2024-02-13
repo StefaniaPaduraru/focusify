@@ -9,24 +9,24 @@ import SearchBar from "./SearchBar";
 function MenuContent() {
   return (
     <>
-        <Link to="/" className="navbar-brand">
+        <Link to="/focusify" className="navbar-brand">
               <img src={logo} alt="Logo" style={{ width: 200}}/>
         </Link>
         <SearchBar/>
         <div className="container-fluid">
           <ul className="navbar-nav flex-column" >
             <li className="nav-item" style={{ width: 200}}>
-              <Link to="/home" className="nav-link nav-tabs nav-justified">
+              <Link to="/focusify/home" className="nav-link nav-tabs nav-justified">
               <FaHome /> Home 
               </Link>
             </li>
             <li className="nav-item" style={{ width: 200}}>
-            <Link to="/calendar" className="nav-link nav-tabs nav-justified">
+            <Link to="/focusify/calendar" className="nav-link nav-tabs nav-justified">
                <FaCalendarAlt /> Calendar
               </Link>
             </li>
             <li className="nav-item" style={{ width: 200}}>
-            <Link to="/pomorodo" className="nav-link nav-tabs nav-justified">
+            <Link to="/focusify/pomorodo" className="nav-link nav-tabs nav-justified">
             <FaClock /> Pomorodo
               </Link>
             </li>

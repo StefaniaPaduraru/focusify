@@ -14,11 +14,11 @@ function App() {
        <div className="app">
       <NavBar/>
       <Routes>
-        <Route path="/" element={<DefaultMessage/> }/>
-        <Route path="/home" element={<Home />} />
-        <Route path="/calendar" element={<CalendarActivities />} />
-        <Route path="/pomorodo" element={<Pomorodo />} />
-        <Route path="/search" element={<SearchResults />} />
+        <Route path="/focusify" element={<DefaultMessage/> }/>
+        <Route path="/focusify/home" element={<Home />} />
+        <Route path="/focusify/calendar" element={<CalendarActivities />} />
+        <Route path="/focusify/pomorodo" element={<Pomorodo />} />
+        <Route path="/focusify/search" element={<SearchResults />} />
       </Routes>
       </div>
       <Footer/>
