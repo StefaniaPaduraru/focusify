@@ -7,7 +7,7 @@ function DefaultMessage() {
   ///toLocaleDateString of the Data object converts a date to a string by using local settings.
   return (
     <>
-    <div>
+    <div className="container-fluid">
     <section className="container p-5">
       <h1>My Day</h1>
       <p id="current-date">{formattedDate}</p>

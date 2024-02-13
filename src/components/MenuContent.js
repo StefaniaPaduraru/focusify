@@ -2,36 +2,30 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { FaCalendarAlt, FaClock, FaHome } from "react-icons/fa";
 import './Navbar.css';
+import logo from '../images/logo.png'
+import SearchBar from "./SearchBar";
+
 
 function MenuContent() {
   return (
     <>
         <Link to="/" className="navbar-brand">
-               Focusify
+              <img src={logo} alt="Logo" style={{ width: 200}}/>
         </Link>
-        <form className="d-flex">
-          <input
-            className="form-control me-2"
-            type="text"
-            placeholder="Search"
-          />
-          <button className="btn btn-dark" type="button">
-            Search
-          </button>
-        </form>
+        <SearchBar/>
         <div className="container-fluid">
-          <ul className="navbar-nav flex-column">
-            <li className="nav-item">
+          <ul className="navbar-nav flex-column" >
+            <li className="nav-item" style={{ width: 200}}>
               <Link to="/home" className="nav-link nav-tabs nav-justified">
               <FaHome /> Home 
               </Link>
             </li>
-            <li className="nav-item">
+            <li className="nav-item" style={{ width: 200}}>
             <Link to="/calendar" className="nav-link nav-tabs nav-justified">
                <FaCalendarAlt /> Calendar
               </Link>
             </li>
-            <li className="nav-item">
+            <li className="nav-item" style={{ width: 200}}>
             <Link to="/pomorodo" className="nav-link nav-tabs nav-justified">
             <FaClock /> Pomorodo
               </Link>

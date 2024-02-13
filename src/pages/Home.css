@@ -1,0 +1,30 @@
+.one-task{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:0 2vw;
+}
+.task-display{
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items:stretch;
+    padding:5px;
+    background: rgba(255, 255, 255, 0.925);
+    margin-top:5vh;
+}
+.container-home{
+    display:flex;
+    flex-direction: column;
+    padding:5%;
+}
+.buttons{
+    width:25vw;
+    display:flex;
+    justify-content:flex-end;
+}
+.sort-button{
+    width:20vw;
+    margin-top: 10px;
+    align-self: flex-end;
+}

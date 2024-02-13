@@ -1,7 +1,7 @@
 .navbar {
     width: 300px;
     padding: 10px;
-    background-color: burlywood;
+    background-color:cadetblue;
     top:0;
     position:sticky;
     height: 100vh;
@@ -21,6 +21,11 @@
   }
   .offcanvas{
     padding: 10px;
-    background-color:burlywood;
-    max-width: 50%;
+    background-color:cadetblue;
+    max-width: 40%;
+  }
+  @media (max-width: 767px) {
+    .offcanvas {
+      max-width: 70%;
+    }
   }
