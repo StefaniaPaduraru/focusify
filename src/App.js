@@ -1,6 +1,6 @@
 import './App.css';
 import NavBar from './components/Navbar';
-import Calendar from './pages/Calendar.js';
+import CalendarActivities from './pages/CalendarActivities.js';
 import Home from './pages/Home.js';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Pomorodo from './pages/Pomorodo.js';
@@ -15,7 +15,7 @@ function App() {
       <Routes>
         <Route path="/" element={<DefaultMessage/> }/>
         <Route path="/home" element={<Home />} />
-        <Route path="/calendar" element={<Calendar />} />
+        <Route path="/calendar" element={<CalendarActivities />} />
         <Route path="/pomorodo" element={<Pomorodo />} />
       </Routes>
       </div>
