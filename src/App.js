@@ -3,7 +3,7 @@ import NavBar from './components/Navbar';
 import CalendarActivities from './pages/CalendarActivities.js';
 import Home from './pages/Home.js';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Pomorodo from './pages/Pomorodo.js';
+import Pomodoro from './pages/Pomodoro.js';
 import DefaultMessage from './components/DefaultMessage.js';
 import Footer from './components/Footer.js';
 import SearchResults from './components/SearchResults.js';
@@ -17,7 +17,7 @@ function App() {
         <Route path="/focusify" element={<DefaultMessage/> }/>
         <Route path="/focusify/home" element={<Home />} />
         <Route path="/focusify/calendar" element={<CalendarActivities />} />
-        <Route path="/focusify/pomorodo" element={<Pomorodo />} />
+        <Route path="/focusify/pomodoro" element={<Pomodoro />} />
         <Route path="/focusify/search" element={<SearchResults />} />
       </Routes>
       </div>

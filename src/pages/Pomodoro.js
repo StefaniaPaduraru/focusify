@@ -1,10 +1,10 @@
 import React, { useState, useEffect, useRef } from "react";
-import "./Pomorodo.css";
+import "./Pomodoro.css";
 import { FaInfo } from "react-icons/fa";
 import * as bootstrap from "bootstrap";
 import ProgressBar from "@ramonak/react-progress-bar";
 
-function Pomorodo() {
+function Pomodoro() {
   const [timer, setTimer] = useState(50 * 60); // 50 minutes
   const [isActive, setIsActive] = useState(false);
   const [sessions, setSessions] = useState([]);
@@ -131,4 +131,4 @@ function Pomorodo() {
   );
 }
 
-export default Pomorodo;
+export default Pomodoro;

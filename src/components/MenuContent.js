@@ -26,8 +26,8 @@ function MenuContent() {
               </Link>
             </li>
             <li className="nav-item" style={{ width: 200}}>
-            <Link to="/focusify/pomorodo" className="nav-link nav-tabs nav-justified">
-            <FaClock /> Pomorodo
+            <Link to="/focusify/pomodoro" className="nav-link nav-tabs nav-justified">
+            <FaClock /> Pomodoro
               </Link>
             </li>
           </ul>
