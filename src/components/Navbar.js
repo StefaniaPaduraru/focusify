@@ -34,8 +34,8 @@ function NavBar() {
   return (
     <>
       <div className="offcanvas offcanvas-start" id="demo">
-      <Link to="/focusify" className="navbar-brand" data-bs-dismiss="offcanvas">
-              <img src={logo} alt="Logo" style={{ width: 200}}/>
+      <Link to="/focusify" className="navbar-brand" >
+              <img src={logo} alt="Logo" style={{ width: 200}} data-bs-dismiss="offcanvas"/>
         </Link>
         <Form className="d-flex" onSubmit={handleSubmit}>
           <Form.Control
@@ -51,7 +51,7 @@ function NavBar() {
           </Button>
         </Form>
         <div className="container-fluid">
-          <ul className="navbar-nav flex-column" >
+          <ul className="navbar-nav flex-column">
             <li className="nav-item" style={{ width: 200}} data-bs-dismiss="offcanvas">
               <Link to="/focusify/home" className="nav-link nav-tabs nav-justified">
               <FaHome /> Home 

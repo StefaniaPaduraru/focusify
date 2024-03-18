@@ -45,11 +45,10 @@
     }
     .buttons{
         flex-direction: column;
-        padding-top:5vh;
+        padding-top:2vh;
     }
     .group-button{
-        display:flex;
-        flex-direction: column;
+        padding-top:1vh;
     }
     .sort-button{
         width:100%;

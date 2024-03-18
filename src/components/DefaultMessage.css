@@ -14,16 +14,12 @@
 
 @media screen and (max-width: 770px) {
     .container-mess{
-        width:100%;
-        font-size: smaller;
-        & > h1{
-            font-size: smaller;
-        }
+        width:100%;  
     }
-    .container-myday{
-        font-size: smaller;
+    .container-mess .h1{
+        font-size: 2rem;
     }
     .container-message{
-        padding: 7%;
+        padding: 16% 4%;
     }
 }

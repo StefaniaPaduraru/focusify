@@ -35,6 +35,10 @@ function CalendarActivities() {
     localStorage.setItem("dataKey", JSON.stringify(data)); // Store the 'data' state in local storage whenever it changes
   }, [data]); // This effect runs whenever the 'data' state changes
 
+  const filteredEvents = data.filter(
+    (event) =>
+      new Date(event.date).toDateString() === date.toDateString()
+  );
   return (
     <div className="container container-calendar">
       <Calendar onChange={setDate} value={date} />
@@ -99,27 +103,22 @@ function CalendarActivities() {
           </Form>
         </Modal.Body>
       </Modal>
-      <div className="container-fluid event-display">
-        {data
-          .filter(
-            (event) =>
-              ///The filter function passes through each event in the date, and returns only events that have the same date as the current value of the date
-            new Date(event.date).toDateString() === date.toDateString()
-          )
-          .map((event) => (
-            /// The mapping function passes through each event remaining after filtering and returns a new DIV for each event
-            <div key={event.id} className="container div-calendar">
-              <h3>{event.title}</h3>
-              <p>{event.description}</p>
-              <button
-                className="btn btn-danger"
-                onClick={() => handleDelete(event.id)}
-              >
-                Delete
-              </button>
-            </div>
-          ))}
-      </div>
+      {filteredEvents.length > 0 && (
+    <div className="container-fluid event-display">
+      {filteredEvents.map((event) => (
+        <div key={event.id} className="container div-calendar">
+          <h3>{event.title}</h3>
+          <p>{event.description}</p>
+          <button
+            className="btn btn-danger"
+            onClick={() => handleDelete(event.id)}
+          >
+            Delete
+          </button>
+        </div>
+      ))}
+    </div>
+  )}
     </div>
   );
 }

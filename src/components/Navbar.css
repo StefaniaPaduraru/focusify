@@ -15,6 +15,7 @@
   
   .nav-item{
     margin-top:4vh;
+    font-size: x-large;
   }
   .d-flex{
     margin-top:40px;
@@ -27,5 +28,6 @@
   @media (max-width: 767px) {
     .offcanvas {
       max-width: 70%;
+      
     }
   }

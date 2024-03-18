@@ -1,12 +1,12 @@
-* {
-    box-sizing: border-box;
-  }
 .App-footer {
     background-color: #282c34;
     color: white;
-    padding: 20px 0;
+    padding: 1vh 0;
     margin-top:auto;
     width: 100%;
+    position: fixed;
+    bottom: 0;
+    font-size:smaller;
   }
   .footer-links {
     list-style: none;
@@ -21,6 +21,7 @@
   .container-footer{
     display:flex;
     margin: 0 auto;
+    align-items: center;
     padding: 0 20px;
     
   }
@@ -28,10 +29,21 @@
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    
     width: 80%;
   }
   @media (max-width: 868px) {
     .container-footer-links{
       width: 60%;
+    }
+  }
+  @media (max-width: 500px) {
+    .container-footer{
+      display:flex;
+      flex-direction: column;
+    }
+    .container-footer-links{
+      width: 100%;
+      align-items: center;
     }
   }
