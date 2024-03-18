@@ -69,7 +69,7 @@ function Home() {
             value={task}
             onChange={(e) => setTask(e.target.value)}
             style={{
-              fontSize: "1.3rem",
+              fontSize: "1.2rem",
               fontWeight: "bold",
               height: "4rem",
             }}
@@ -96,7 +96,7 @@ function Home() {
                     <FaTrash />
                   </Button>
 
-                  <ButtonGroup aria-label="Basic example">
+                  <ButtonGroup className="group-button">
                     <Button
                       variant={task.importance === "Low" ? "dark" : "secondary"}
                       onClick={() => handleImportance(task.id, "Low")}

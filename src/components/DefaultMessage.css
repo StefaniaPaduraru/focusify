@@ -1,18 +1,29 @@
-.container-message{
+.container-mess{
     padding:5vh 5vw;
+    width:60%;
+    margin-left:0px;
 }
 .container-myday{
     padding:5vh 5vw;
 }
-.container-fluid{
-    padding: 5% 10%;
+.container-message{
+    display:flex;
+    flex-direction: column;
+    padding:5%;
 }
-@media screen and (max-width: 413px) {
-    .container-message{
-        padding:5vh 5vw;
+
+@media screen and (max-width: 770px) {
+    .container-mess{
+        width:100%;
+        font-size: smaller;
+        & > h1{
+            font-size: smaller;
+        }
     }
     .container-myday{
-        padding:5vh 5vw;
+        font-size: smaller;
     }
-    
+    .container-message{
+        padding: 7%;
+    }
 }

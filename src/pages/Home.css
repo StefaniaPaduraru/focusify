@@ -28,3 +28,30 @@
     margin-top: 10px;
     align-self: flex-end;
 }
+@media screen and (max-width: 768px){
+    .container-home{
+        padding:5%;
+    }
+    .buttons{
+        width:50vw;
+    }
+    .sort-button{
+        width:40vw;
+    }
+}
+@media screen and (max-width: 480px){
+    .one-task{
+        flex-direction: column;
+    }
+    .buttons{
+        flex-direction: column;
+        padding-top:5vh;
+    }
+    .group-button{
+        display:flex;
+        flex-direction: column;
+    }
+    .sort-button{
+        width:100%;
+    }
+}
