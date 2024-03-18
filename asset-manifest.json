@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/focusify/static/css/main.245b981e.css",
-    "main.js": "/focusify/static/js/main.7d55f054.js",
+    "main.css": "/focusify/static/css/main.229da75e.css",
+    "main.js": "/focusify/static/js/main.2e227a6d.js",
     "static/js/808.6d361f6d.chunk.js": "/focusify/static/js/808.6d361f6d.chunk.js",
     "static/media/background.jpg": "/focusify/static/media/background.377153b951cdc605ded3.jpg",
     "static/media/logo.png": "/focusify/static/media/logo.5ac3008c68234b48361c.png",
     "index.html": "/focusify/index.html",
-    "main.245b981e.css.map": "/focusify/static/css/main.245b981e.css.map",
-    "main.7d55f054.js.map": "/focusify/static/js/main.7d55f054.js.map",
+    "main.229da75e.css.map": "/focusify/static/css/main.229da75e.css.map",
+    "main.2e227a6d.js.map": "/focusify/static/js/main.2e227a6d.js.map",
     "808.6d361f6d.chunk.js.map": "/focusify/static/js/808.6d361f6d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.245b981e.css",
-    "static/js/main.7d55f054.js"
+    "static/css/main.229da75e.css",
+    "static/js/main.2e227a6d.js"
   ]
 }
