@@ -17,6 +17,7 @@ function NavBar() {
     };
   }, []);
 
+
   return (
     <>
       <div className="offcanvas offcanvas-start" id="demo">

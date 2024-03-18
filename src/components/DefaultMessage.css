@@ -1,0 +1,18 @@
+.container-message{
+    padding:5vh 5vw;
+}
+.container-myday{
+    padding:5vh 5vw;
+}
+.container-fluid{
+    padding: 5% 10%;
+}
+@media screen and (max-width: 413px) {
+    .container-message{
+        padding:5vh 5vw;
+    }
+    .container-myday{
+        padding:5vh 5vw;
+    }
+    
+}

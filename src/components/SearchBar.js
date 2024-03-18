@@ -8,7 +8,9 @@ function SearchBar() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    navigate(`/search?query=${searchTerm}`); /// The Navigate function navigates to the "/search" route, adding the search term as a query parameter.
+    if (searchTerm.trim() !== '') {
+      navigate(`/focusify/search?query=${searchTerm}`);
+    }
   };
 
   return (
@@ -19,8 +21,9 @@ function SearchBar() {
             placeholder="Search"
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
+            required
           />
-          <Button variant="dark" type="submit">
+          <Button variant="dark" type="submit" >
             Search
           </Button>
         </Form>

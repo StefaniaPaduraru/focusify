@@ -1,13 +1,15 @@
 import React from "react";
-import { useLocation } from "react-router-dom";
+import { useSearchParams } from "react-router-dom";
 import "../pages/Home.css";
 
 function SearchResults() {
-  const query = new URLSearchParams(useLocation().search).get("query"); //useLocation (hook) extracts the value of the query parameter, which represents the search term entered by the user
+  const [searchParams] = useSearchParams();
+  const query = searchParams.get('query'); 
   const data = JSON.parse(localStorage.getItem("taskdata")) || []; //Uploads saved tasks from localStorage, obtains the data as a string, and JSON.parse converts it back into a JavaScript object. If there is no saved data, an empty array will be used as the default value
   const results = data.filter((task) =>
-    task.task.toLowerCase().includes(query.toLowerCase())
-  ); //Filter tasks to find those that include your search term
+  task.task && task.task.toLowerCase().includes(query.toLowerCase())
+);
+ //Filter tasks to find those that include your search term
   //task.task - the title/name of the task
   return (
     <div className="container-home">

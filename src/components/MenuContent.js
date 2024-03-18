@@ -15,17 +15,17 @@ function MenuContent() {
         <SearchBar/>
         <div className="container-fluid">
           <ul className="navbar-nav flex-column" >
-            <li className="nav-item" style={{ width: 200}}>
+            <li className="nav-item"  style={{ width: 200}} >
               <Link to="/focusify/home" className="nav-link nav-tabs nav-justified">
               <FaHome /> Home 
               </Link>
             </li>
-            <li className="nav-item" style={{ width: 200}}>
+            <li className="nav-item"  style={{ width: 200}}>
             <Link to="/focusify/calendar" className="nav-link nav-tabs nav-justified">
                <FaCalendarAlt /> Calendar
               </Link>
             </li>
-            <li className="nav-item" style={{ width: 200}}>
+            <li className="nav-item"  style={{ width: 200}}>
             <Link to="/focusify/pomodoro" className="nav-link nav-tabs nav-justified">
             <FaClock /> Pomodoro
               </Link>
