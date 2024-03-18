@@ -23,7 +23,7 @@ function SearchBar() {
             onChange={(e) => setSearchTerm(e.target.value)}
             required
           />
-          <Button variant="dark" type="submit" >
+          <Button variant="dark" type="submit">
             Search
           </Button>
         </Form>
