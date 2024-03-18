@@ -1,7 +1,7 @@
 .App-footer {
     background-color: #282c34;
     color: white;
-    padding: 1vh 0;
+    padding: 5px 0;
     margin-top:auto;
     width: 100%;
     position: fixed;
@@ -22,28 +22,31 @@
     display:flex;
     margin: 0 auto;
     align-items: center;
-    padding: 0 20px;
-    
+    justify-content: center;
+    padding: 5px 20px;
   }
   .container-footer-links{
     display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    
+    align-items: center;
+    justify-content: flex-end;
     width: 80%;
   }
   @media (max-width: 868px) {
     .container-footer-links{
-      width: 60%;
+      width: 100%;
+      justify-content: center;
+    }
+    .container-footer{
+      flex-direction: column;
+      
     }
   }
-  @media (max-width: 500px) {
+  @media (max-width: 300px) {
     .container-footer{
-      display:flex;
       flex-direction: column;
     }
     .container-footer-links{
       width: 100%;
-      align-items: center;
+      flex-direction: column;
     }
   }

@@ -16,7 +16,7 @@
 .container-home{
     display:flex;
     flex-direction: column;
-    padding:5%;
+    padding:10vh 5%;
 }
 .buttons{
     width:25vw;
